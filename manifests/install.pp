@@ -5,7 +5,7 @@ class elasticsearch::install {
   include aptrepo
 
   aptrepo::addrepo { 'elasticsearch':
-    location => 'http://packages.elasticsearch.org/elasticsearch/1.4/debian/',
+    location => 'http://packages.elasticsearch.org/elasticsearch/1.5/debian/',
     key      => 'http://packages.elasticsearch.org/GPG-KEY-elasticsearch',
   } -> Package['elasticsearch']
 
