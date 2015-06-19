@@ -5,7 +5,7 @@ describe 'elasticsearch', :type => :class do
 
   context 'with default parameters' do
     it { should contain_aptrepo__addrepo('elasticsearch')
-        .with_location('http://packages.elasticsearch.org/elasticsearch/1.5/debian/')
+        .with_location('http://packages.elasticsearch.org/elasticsearch/1.6/debian/')
         .with_key('http://packages.elasticsearch.org/GPG-KEY-elasticsearch')
     }
 
